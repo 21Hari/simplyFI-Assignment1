@@ -1,0 +1,22 @@
+.user-list-container {
+
+    background-color: #f9f9f9;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.user-heading {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.user-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
