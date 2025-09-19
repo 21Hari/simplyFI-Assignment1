@@ -1,7 +1,7 @@
 import UserCard from '../userCard';
 import './index.css';
 import { useState, useEffect } from 'react';
-import { TailSpin } from "react-loader-spinner";
+import { ClipLoader } from "react-spinners";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
@@ -22,16 +22,11 @@ const UserList = () => {
 
   }
 
-  const renderLoader = () => (<div className="loader-container">
-    <TailSpin
-      visible={true}
-      height="60"
-      width="60"
-      color="#000000"
-      ariaLabel="tail-spin-loading"
-      radius="1"
-    />
-  </div>);
+  const renderLoader = () => (
+    <div className="loader-container">
+      <ClipLoader color="#000000" loading={true} size={60} />
+    </div>
+  );
 
   return (
     <div className='user-list-container'>
